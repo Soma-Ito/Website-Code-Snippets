@@ -1,1 +1,4 @@
-.DS_Store, .project, *.pyc
+.DS_Store
+__pycache__/
+*.pyc
+.project
