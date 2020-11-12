@@ -1,0 +1,36 @@
+
+# Command Promptに下のコードをコピー・ペーストしてください
+where python
+
+# 次のような結果が表示されるはずです
+C:\Users\(username)\AppData\Local\Programs\Python\Python39\python.exe
+C:\Users\(username)\AppData\Local\Microsoft\WindowsApps\python.exe
+
+# 出力された1行目の結果を"\"を"/"に書き換えてコピーしてメモ帳などに残しておいてください
+C:/Users/(username)/AppData/Local/Programs/Python/Python39/python.exe
+
+# Sublime Text Build System Example
+{
+    "cmd": ["python", "$file"],
+    "selector": "source.python",
+    "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+}
+
+# Build Systemの初期画面
+{
+    "shell_cmd": "make"
+}
+
+# Sublime Text Build System Example 貼り付け後
+{
+    "cmd": ["python", "$file"],
+    "selector": "source.python",
+    "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+}
+
+# Sublime Text Build System 最終形(例)
+{
+    "cmd": ["C:/Users/(username)/AppData/Local/Programs/Python/Python39/python.exe", "-u", "$file"],
+    "selector": "source.python",
+    "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+}

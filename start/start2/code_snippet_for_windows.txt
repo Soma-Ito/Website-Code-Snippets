@@ -1,0 +1,16 @@
+
+# Command Promptに次のコマンドを入力してください
+python
+
+# 次のような結果が表示されるはずです
+Python 3.9.0 (tags/v3.9.0:9cf6752, Oct 5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+
+# Command Promptに次のコマンドを入力してください
+print("Hello World")
+
+# 無事にインストールされている場合は、次のような結果が表示されます
+Hello World
+
+# Command Promptに次のコマンドを入力し、Pythonを閉じてください
+exit()
